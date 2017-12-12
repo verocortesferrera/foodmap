@@ -1,0 +1,26 @@
+body{
+	background-color: #505050;
+}
+.content{
+	background-color: #505050;
+	color:#B97A45;
+	height: 100vh;
+	width: 100%;
+	max-height: 100%;
+	text-transform: uppercase;
+	font-weight: bolder;
+	z-index: 100;
+position: absolute;
+padding-top: 40vh;
+}
+.content h1{
+	font-size: 5em;
+}
+
+.content2{
+	height: 100vh;
+	width: 100%;
+	max-height: 100%;
+	color:#fff;
+	position: relative;
+}
