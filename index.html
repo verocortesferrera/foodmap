@@ -34,7 +34,7 @@
 <!--mapa-->
 		<div class="row">
 			<div class="col-xs-12">
-				<h3 class="text-center">My Google Maps Demo</h3>
+				<h3 class="text-center">Busca donde comer</h3>
 				<div id="map"></div>
 			</div>
 		</div>
@@ -46,33 +46,90 @@
 				</div>
 				<div class="col-xs-12 col-sm-6 col-sm-push-3 col-md-6 col-lg-push-3 col-lg-6 col-slg-push-3">
 					<select id="status" name="status" class="form-control" onChange="mostrar(this.value);">
-						<option type="button" id="" value="italia">Italiano</option>
-						<option type="button" id="" value="chile">Chilena</option>
-						<option type="button" id="" value="peru">Peruana</option>
-						<option type="button" id="" value="mexico">Mexicana</option>
+						<option type="button" value="resta">¿Qué se te antoja?</option>
+						<option type="button" value="italia">Italiano</option>
+						<option type="button" value="chile">Chilena</option>
+						<option type="button" value="china">China</option>
+						<option type="button" value="mexico">Mexicana</option>
 					</select>
 				</div>
 			</div><!--row-->
 		</div><!--form-->
 
+		
+		<!-- restaurantes -->
+		<div class="container rest" id="resta">
+			<div class="row">
+				<div class="col-xs-6" >
+					<div class="fotos" id="italiano3"></div>
+				</div>
+				<div class="col-xs-6" >
+					<div class="fotos" id="china3"></div>
+				</div>
+				<div class="col-xs-6">
+					<div id="mexico3" class="fotos"></div>
+				</div>
+				<div class="col-xs-6">
+					<div id="chileno3" class="fotos"></div>
+				</div>
+			</div>
+		</div><!-- restaurante -->
 		<!-- italia -->
 		<div class="container italia" id="italia" style="display:none">
 			<div class="row">
-				<div class="italian col-xs-12" >
+				<div class="italian col-xs-6" >
 					<div class="fotos" id="italiano1"></div>
+				</div>
+				<div class="italian col-xs-6" >
 					<div class="fotos" id="italiano2"></div>
+				</div>
+				<div class="col-xs-12">
+					<div id="italiano3" class="fotos"></div>
 				</div>
 			</div>
 		</div><!-- italia -->
 <!-- chile -->
 		<div class="container chile" id="chile" style="display:none">
 			<div class="row">
-				<div class=" col-xs-12" >
+				<div class=" col-xs-6" >
 					<div class="fotos" id="chileno1"></div>
+				</div>
+				<div class=" col-xs-6" >
 					<div class="fotos" id="chileno2"></div>
 				</div>
+				<div class="col-xs-12">
+					<div class="fotos" id="chileno3" ></div>
+				</div>
 			</div>
-		</div><!-- italia -->
+		</div><!-- chile -->
+		<!-- chino -->
+		<div class="container china" id="china" style="display:none">
+			<div class="row">
+				<div class=" col-xs-6" >
+					<div class="fotos" id="china1"></div>
+				</div>
+				<div class=" col-xs-6" >
+					<div class="fotos" id="china2"></div>
+				</div>
+				<div class="col-xs-12">
+					<div class="fotos" id="china3" ></div>
+				</div>
+			</div>
+		</div><!-- china -->
+<!-- mexico -->
+		<div class="container mexico" id="mexico" style="display:none">
+			<div class="row">
+				<div class=" col-xs-6" >
+					<div class="fotos" id="mexico1"></div>
+				</div>
+				<div class=" col-xs-6" >
+					<div class="fotos" id="mexico2"></div>
+				</div>
+				<div class="col-xs-12">
+					<div class="fotos" id="mexico3" ></div>
+				</div>
+			</div>
+		</div><!-- chile -->
 
 	</div><!--container-->
 

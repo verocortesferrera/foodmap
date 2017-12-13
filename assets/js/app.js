@@ -25,17 +25,37 @@ function initMap() {
 }
 
 function mostrar(id) {
-    if (id == "italia") {
-        $("#italia").show();
-        $("#chile").hide();
-        $("#peru").hide();
-        $("#mexico").hide();
-    }
+	var opciones = $("#status").val();
+	$('#resta').val('');
+		if (id == "italia") {
+			$("#resta").hide();
+			$("#italia").show();
+			$("#chile").hide();
+			$("#china").hide();
+			$("#mexico").hide();
+		}
 
-    if (id == "chile") {
-        $("#italia").hide();
-        $("#chile").show();
-        $("#peru").hide();
-        $("#mexico").hide();
-    }
+		if (id == "chile") {
+			$("#resta").hide();
+			$("#italia").hide();
+			$("#chile").show();
+			$("#china").hide();
+			$("#mexico").hide();
+		}
+
+		if (id == "china"){
+			$("#resta").hide();
+			$("#italia").hide();
+			$("#chile").hide();
+			$("#china").show();
+			$("#mexico").hide();
+		}
+
+		if (id == "mexico"){
+			$("#resta").hide();
+			$("#italia").hide();
+			$("#chile").hide();
+			$("#china").hide();
+			$("#mexico").show();
+		}
 };

@@ -67,22 +67,73 @@ body{
 	text-align: center;
 	font-weight: 400;
 	font-size: 2em;
-	padding-top: 2vh;
 }
 
 /*img*/
-#italiano1 {
-  background-image: url(../img/italian-1.jpg);
-  height: 20vh;
-  width: 100%;
-  padding-bottom: 10px;
-  min-height: 100%;
+
+.fotos{
+	height: 10vh;
+	width: 100%;
+	padding-bottom: 10px;
+
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
+#italiano1 {
+	background-image: url(../img/italian-1.jpg);
+}
+
+#italiano2 {
+	background-image: url(../img/veramente-una-pizzeria.jpg);
+}
+
+#italiano3 {
+	background-image: url(../img/pasta-engorda-estudio-italia.jpg);
+	margin-top: 10px;
+	height: 15vh;
+}
+
 
 #chileno1{
 	background-image: url(../img/cazuela.jpg);
-	height: 20vh;
-  width: 100%;
-  padding-bottom: 10px;
-  min-height: 100%;
+}
+
+#chileno2{
+	background-image: url(../img/chile2.jpg);
+}
+
+#chileno3{
+	background-image: url(../img/porotos.jpg);
+	margin-top: 10px;
+	height: 15vh
+}
+
+#china1{
+	background-image: url(../img/china1.jpg);
+}
+
+#china2{
+	background-image: url(../img/china2.jpg);
+}
+
+#china3{
+	background-image: url(../img/china3.jpg);
+	margin-top: 10px;
+	height: 15vh
+}
+
+#mexico1{
+	background-image: url(../img/mexico1.jpg);
+}
+
+#mexico2{
+	background-image: url(../img/mexico2.jpg);
+}
+
+#mexico3{
+	background-image: url(../img/mexico3.jpg);
+	margin-top: 10px;
+	height: 15vh
 }
