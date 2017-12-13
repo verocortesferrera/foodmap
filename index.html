@@ -19,7 +19,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h1 class=" text-center">Foodmap</h1>
 				<!--loading-->
-				<div class="col-xs-1 box col-sm-push-4 text-center"></div>
+				<div class="col-xs-1 box col-sm-push-4 text-center loanding"></div>
 			</div>
 		</div>
 	</div>
@@ -31,39 +31,49 @@
 				<h2 class="text-center page-header">Foodmap</h2>
 			</div>
 		</div>
-		<!--mapa-->
+<!--mapa-->
 		<div class="row">
 			<div class="col-xs-12">
 				<h3 class="text-center">My Google Maps Demo</h3>
 				<div id="map"></div>
 			</div>
 		</div>
-		<!-- input buscador restaurante -->
+<!-- input buscador restaurante -->
 		<div class="form-group">
 			<div class="row">
 				<div class="col-xs-12 text-center control-label sabores" id="sabores" for="typeHypo">
 					<h3>Sabores  <span class="glyphicon glyphicon-search" aria-hidden="true"></span></h3>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-sm-push-3 col-md-6 col-lg-push-3 col-lg-6 col-slg-push-3">
-					<select id="typeHypo" name="typeHypo" class="form-control">
-						<option type="button" id="sab1" value="1">Italiano</option>
-						<option type="button" id="sab2" value="2">Chilena</option>
-						<option type="button" id="sab3" value="3">Peruana</option>
-						<option type="button" id="sab4" value="4">Mexicana</option>
+					<select id="status" name="status" class="form-control" onChange="mostrar(this.value);">
+						<option type="button" id="" value="italia">Italiano</option>
+						<option type="button" id="" value="chile">Chilena</option>
+						<option type="button" id="" value="peru">Peruana</option>
+						<option type="button" id="" value="mexico">Mexicana</option>
 					</select>
 				</div>
 			</div><!--row-->
 		</div><!--form-->
 
-			<!-- fotos -->
-	<div class="container italia" style="display:none">
-		<div class="row">
-			<div class="italian col-xs-12" >
-				<div class="fotos" id="img1"></div>
-				<div class="fotos" id="img2"></div>
+		<!-- italia -->
+		<div class="container italia" id="italia" style="display:none">
+			<div class="row">
+				<div class="italian col-xs-12" >
+					<div class="fotos" id="italiano1"></div>
+					<div class="fotos" id="italiano2"></div>
+				</div>
 			</div>
-		</div>
-	</div>
+		</div><!-- italia -->
+<!-- chile -->
+		<div class="container chile" id="chile" style="display:none">
+			<div class="row">
+				<div class=" col-xs-12" >
+					<div class="fotos" id="chileno1"></div>
+					<div class="fotos" id="chileno2"></div>
+				</div>
+			</div>
+		</div><!-- italia -->
+
 	</div><!--container-->
 
 

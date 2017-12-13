@@ -26,10 +26,13 @@ body{
 	position: relative;
 }
 
+.loanding{
+	padding-left: 60px;
+}
 .box{
 	margin: 0;
 	padding: 0;
-	padding-left: 60px;
+	margin-left: 60px;
 	border-width:50px;
 	width: 40vh;
 	margin-left: auto;
@@ -68,9 +71,17 @@ body{
 }
 
 /*img*/
-#img1 {
+#italiano1 {
   background-image: url(../img/italian-1.jpg);
   height: 20vh;
+  width: 100%;
+  padding-bottom: 10px;
+  min-height: 100%;
+}
+
+#chileno1{
+	background-image: url(../img/cazuela.jpg);
+	height: 20vh;
   width: 100%;
   padding-bottom: 10px;
   min-height: 100%;

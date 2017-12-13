@@ -8,9 +8,7 @@ $(document).ready(function() {
 			$(".content2").fadeIn(500);
 		});
 
-	$('#sabi2').click(function(){
-	$('.italia').show();
-	});
+
 
 });
 
@@ -26,4 +24,18 @@ function initMap() {
 	});
 }
 
+function mostrar(id) {
+    if (id == "italia") {
+        $("#italia").show();
+        $("#chile").hide();
+        $("#peru").hide();
+        $("#mexico").hide();
+    }
 
+    if (id == "chile") {
+        $("#italia").hide();
+        $("#chile").show();
+        $("#peru").hide();
+        $("#mexico").hide();
+    }
+};
