@@ -8,6 +8,16 @@ $(document).ready(function() {
 			$(".content2").fadeIn(500);
 		});
 
+	$('.fotos').mouseover(over);
+	function over(){
+		var nombre = $(this).index()+1;
+		console.log(nombre);
+		$('.text-overlay').show();
+	}
+	$('.fotos').mouseout(function(){
+			$('.text-overlay').hide();
+	});
+	
 
 
 });
@@ -59,3 +69,6 @@ function mostrar(id) {
 			$("#mexico").show();
 		}
 };
+
+
+$('[data-toggle="tooltip"]').tooltip();

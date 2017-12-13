@@ -13,6 +13,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+
 	<!--splash-->
 	<div class="container-fluid content">
 		<div class="row">
@@ -23,8 +24,41 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- inicio modal arbol -->
+	<div class="modal fade" id="modalpicola" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="myModalLabel">Picola Italia</h3>4.9<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+				</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="modal-body">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m25!1m12!1m3!1d106534.80283341283!2d-70.71887194200724!3d-33.44376751321371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m10!3e6!4m3!3m2!1d-33.4080937!2d-70.7070273!4m4!1s0x9662c5a0f80a7c33%3A0xae57babee81f345f!3m2!1d-33.443787199999996!2d-70.6488318!5e0!3m2!1ses!2scl!4v1513194607002" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<h4>Sabores</h4>
+										<p>Comida Italiana</p>
+										<h5>Teléfono</h5>
+										<p>02 2342 2342</p>
+										<a href="http://www.picolaitalia.cl">pagina web</a>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<h5>Puedes encontrar varios en Santiago</h5>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+<!-- fin modal arbol -->
+
 	<!--header-->
-	
 	<div class="content2 container-fluid" style="display:none">
 		<div class="row">
 			<div class="col-xs-12">
@@ -61,15 +95,18 @@
 		<div class="container rest" id="resta">
 			<div class="row">
 				<div class="col-xs-6" >
-					<div class="fotos" id="italiano3"></div>
+				<!--linkmodalpicola-->
+					<a data-target="#modalpicola" data-toggle="modal" href="">
+						<div data-toggle="tooltip" data-placement="bottom" title="italia" class="fotos" id="italiano3"></div>
+					</a>
 				</div>
-				<div class="col-xs-6" >
+				<div data-toggle="tooltip" data-placement="bottom" title="china" class="col-xs-6" >
 					<div class="fotos" id="china3"></div>
 				</div>
-				<div class="col-xs-6">
+				<div data-toggle="tooltip" data-placement="bottom" title="mexico" class="col-xs-6">
 					<div id="mexico3" class="fotos"></div>
 				</div>
-				<div class="col-xs-6">
+				<div data-toggle="tooltip" data-placement="bottom" title="chile" class="col-xs-6">
 					<div id="chileno3" class="fotos"></div>
 				</div>
 			</div>
@@ -79,9 +116,11 @@
 			<div class="row">
 				<div class="italian col-xs-6" >
 					<div class="fotos" id="italiano1"></div>
+					<p class="text-overlay">italiano</p>
 				</div>
 				<div class="italian col-xs-6" >
 					<div class="fotos" id="italiano2"></div>
+					<p class="text-overlay">italianodos</p>
 				</div>
 				<div class="col-xs-12">
 					<div id="italiano3" class="fotos"></div>
